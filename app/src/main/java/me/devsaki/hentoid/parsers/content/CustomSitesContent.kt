@@ -6,7 +6,8 @@ import me.devsaki.hentoid.enums.StatusContent
 import org.jsoup.nodes.Document
 
 class CustomSitesContent : BaseContentParser() {
-    override fun toContent(doc: Document, url: String, updateImages: Boolean): Content {
+    // Corrected override signature to include the 'pg' (page) parameter
+    override fun toContent(doc: Document, url: String, updateImages: Boolean, pg: Int): Content {
         val content = Content()
         val currentSite = Site.searchByUrl(url)
         content.site = currentSite ?: Site.NONE
