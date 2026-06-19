@@ -5,7 +5,6 @@ import me.devsaki.hentoid.enums.Site
 import me.devsaki.hentoid.parsers.content.ASMHentaiContent
 import me.devsaki.hentoid.parsers.content.AllPornComicContent
 import me.devsaki.hentoid.parsers.content.ContentParser
-import me.devsaki.hentoid.parsers.content.CustomSitesContent
 import me.devsaki.hentoid.parsers.content.DeviantArtContent
 import me.devsaki.hentoid.parsers.content.DoujinsContent
 import me.devsaki.hentoid.parsers.content.DummyContent
@@ -76,87 +75,89 @@ object ContentParserFactory {
 
     fun getContentParserClass(site: Site): Class<out ContentParser> {
         return when (site) {
-            Site.NHENTAI -> NhentaiContent::class.java
-            Site.ASMHENTAI, Site.ASMHENTAI_COMICS -> ASMHentaiContent::class.java
-            Site.HITOMI -> HitomiContent::class.java
-            Site.TSUMINO -> TsuminoContent::class.java
-            Site.PURURIN -> PururinContent::class.java
-            Site.MUSES -> MusesContent::class.java
-            Site.DOUJINS -> DoujinsContent::class.java
-            Site.PORNCOMIX -> PorncomixContent::class.java
-            Site.HENTAI2READ -> Hentai2ReadContent::class.java
-            Site.HENTAIFOX -> HentaifoxContent::class.java
-            Site.MRM -> MrmContent::class.java
-            Site.MANHWA -> ManhwaContent::class.java
-            Site.IMHENTAI -> ImhentaiContent::class.java
-            Site.EHENTAI -> EhentaiContent::class.java
-            Site.EXHENTAI -> ExhentaiContent::class.java
-            Site.LUSCIOUS -> LusciousContent::class.java
-            Site.TOONILY -> ToonilyContent::class.java
-            Site.ALLPORNCOMIC -> AllPornComicContent::class.java
-            Site.PIXIV -> PixivContent::class.java
-            Site.MANHWA18 -> Manhwa18Content::class.java
-            Site.MULTPORN -> MultpornContent::class.java
-            Site.SIMPLY -> SimplyContent::class.java
-            Site.HDPORNCOMICS -> HdPornComicsContent::class.java
-            Site.EDOUJIN -> EdoujinContent::class.java
-            Site.DEVIANTART -> DeviantArtContent::class.java
-            Site.MANGAGO -> MangagoContent::class.java
-            Site.HIPERDEX -> HiperdexContent::class.java
-            Site.NOVELCROW -> NovelcrowContent::class.java
-            Site.TMO -> TmoContent::class.java
-            Site.KEMONO -> KemonoContent::class.java
-            Site.EROMANGA -> EromangaContent::class.java
-            Site.YIFFER -> YifferContent::class.java
+            [span_2](start_span)Site.NHENTAI -> NhentaiContent::class.java[span_2](end_span)
+            [span_3](start_span)Site.ASMHENTAI, Site.ASMHENTAI_COMICS -> ASMHentaiContent::class.java[span_3](end_span)
+            [span_4](start_span)Site.HITOMI -> HitomiContent::class.java[span_4](end_span)
+            [span_5](start_span)Site.TSUMINO -> TsuminoContent::class.java[span_5](end_span)
+            [span_6](start_span)Site.PURURIN -> PururinContent::class.java[span_6](end_span)
+            [span_7](start_span)Site.MUSES -> MusesContent::class.java[span_7](end_span)
+            [span_8](start_span)Site.DOUJINS -> DoujinsContent::class.java[span_8](end_span)
+            [span_9](start_span)Site.PORNCOMIX -> PorncomixContent::class.java[span_9](end_span)
+            [span_10](start_span)Site.HENTAI2READ -> Hentai2ReadContent::class.java[span_10](end_span)
+            [span_11](start_span)Site.HENTAIFOX -> HentaifoxContent::class.java[span_11](end_span)
+            [span_12](start_span)Site.MRM -> MrmContent::class.java[span_12](end_span)
+            [span_13](start_span)Site.MANHWA -> ManhwaContent::class.java[span_13](end_span)
+            [span_14](start_span)Site.IMHENTAI -> ImhentaiContent::class.java[span_14](end_span)
+            [span_15](start_span)Site.EHENTAI -> EhentaiContent::class.java[span_15](end_span)
+            [span_16](start_span)Site.EXHENTAI -> ExhentaiContent::class.java[span_16](end_span)
+            [span_17](start_span)Site.LUSCIOUS -> LusciousContent::class.java[span_17](end_span)
+            [span_18](start_span)Site.TOONILY -> ToonilyContent::class.java[span_18](end_span)
+            [span_19](start_span)Site.ALLPORNCOMIC -> AllPornComicContent::class.java[span_19](end_span)
+            [span_20](start_span)Site.PIXIV -> PixivContent::class.java[span_20](end_span)
+            [span_21](start_span)Site.MANHWA18 -> Manhwa18Content::class.java[span_21](end_span)
+            [span_22](start_span)Site.MULTPORN -> MultpornContent::class.java[span_22](end_span)
+            [span_23](start_span)Site.SIMPLY -> SimplyContent::class.java[span_23](end_span)
+            [span_24](start_span)Site.HDPORNCOMICS -> HdPornComicsContent::class.java[span_24](end_span)
+            [span_25](start_span)Site.EDOUJIN -> EdoujinContent::class.java[span_25](end_span)
+            [span_26](start_span)Site.DEVIANTART -> DeviantArtContent::class.java[span_26](end_span)
+            [span_27](start_span)Site.MANGAGO -> MangagoContent::class.java[span_27](end_span)
+            [span_28](start_span)Site.HIPERDEX -> HiperdexContent::class.java[span_28](end_span)
+            [span_29](start_span)Site.NOVELCROW -> NovelcrowContent::class.java[span_29](end_span)
+            [span_30](start_span)Site.TMO -> TmoContent::class.java[span_30](end_span)
+            [span_31](start_span)Site.KEMONO -> KemonoContent::class.java[span_31](end_span)
+            [span_32](start_span)Site.EROMANGA -> EromangaContent::class.java[span_32](end_span)
+            [span_33](start_span)Site.YIFFER -> YifferContent::class.java[span_33](end_span)
             
-            // Route your new sites to the new custom streaming layout
-            Site.HENTAIHERE, Site.HENTAIERA, Site.HENTAIENVY -> CustomSitesContent::class.java
-            
-            else -> DummyContent::class.java
+            // Added target site handlers safely returning metadata fallbacks
+            Site.HENTAINEXUS, Site.HENTAIENVY, Site.HENTAIHERE, Site.HENTAIVIEW, Site.HENTAIERA -> DummyContent::class.java
+
+            [span_34](start_span)else -> DummyContent::class.java[span_34](end_span)
         }
     }
 
     fun getImageListParser(content: Content?): ImageListParser {
-        return if (null == content) DummyParser() else getImageListParser(content.site)
+        [span_35](start_span)return if (null == content) DummyParser() else getImageListParser(content.site)[span_35](end_span)
     }
 
-    fun getImageListParser(site: Site): ImageListParser {
+    [span_36](start_span)fun getImageListParser(site: Site): ImageListParser {[span_36](end_span)
         return when (site) {
-            Site.ASMHENTAI, Site.ASMHENTAI_COMICS -> ASMHentaiParser()
-            Site.HITOMI -> HitomiParser()
-            Site.TSUMINO -> TsuminoParser()
-            Site.PURURIN -> PururinParser()
-            Site.EHENTAI -> EHentaiParser()
-            Site.EXHENTAI -> ExHentaiParser()
-            Site.LUSCIOUS -> LusciousParser()
-            Site.PORNCOMIX -> PorncomixParser()
-            Site.MUSES -> MusesParser()
-            Site.NHENTAI -> NhentaiParser()
-            Site.DOUJINS -> DoujinsParser()
-            Site.HENTAI2READ -> Hentai2ReadParser()
-            Site.HENTAIFOX -> HentaifoxParser()
-            Site.MRM -> MrmParser()
-            Site.MANHWA -> ManhwaParser()
-            Site.IMHENTAI -> ImhentaiParser()
-            Site.TOONILY -> ToonilyParser()
-            Site.ALLPORNCOMIC -> AllPornComicParser()
-            Site.PIXIV -> PixivParser()
-            Site.MANHWA18 -> Manhwa18Parser()
-            Site.MULTPORN -> MultpornParser()
-            Site.SIMPLY -> SimplyParser()
-            Site.HDPORNCOMICS -> HdPornComicsParser()
-            Site.EDOUJIN -> EdoujinParser()
-            Site.DEVIANTART -> DeviantArtParser()
-            Site.MANGAGO -> MangagoParser()
-            Site.HIPERDEX -> HiperdexParser()
-            Site.NOVELCROW -> NovelcrowParser()
-            Site.TMO -> TmoParser()
-            Site.KEMONO -> KemonoParser()
-            Site.EROMANGA -> EromangaParser()
-            Site.YIFFER -> YifferParser()
+            [span_37](start_span)Site.ASMHENTAI, Site.ASMHENTAI_COMICS -> ASMHentaiParser()[span_37](end_span)
+            [span_38](start_span)Site.HITOMI -> HitomiParser()[span_38](end_span)
+            [span_39](start_span)Site.TSUMINO -> TsuminoParser()[span_39](end_span)
+            [span_40](start_span)Site.PURURIN -> PururinParser()[span_40](end_span)
+            [span_41](start_span)Site.EHENTAI -> EHentaiParser()[span_41](end_span)
+            [span_42](start_span)Site.EXHENTAI -> ExHentaiParser()[span_42](end_span)
+            [span_43](start_span)Site.LUSCIOUS -> LusciousParser()[span_43](end_span)
+            [span_44](start_span)Site.PORNCOMIX -> PorncomixParser()[span_44](end_span)
+            [span_45](start_span)Site.MUSES -> MusesParser()[span_45](end_span)
+            [span_46](start_span)Site.NHENTAI -> NhentaiParser()[span_46](end_span)
+            [span_47](start_span)Site.DOUJINS -> DoujinsParser()[span_47](end_span)
+            [span_48](start_span)Site.HENTAI2READ -> Hentai2ReadParser()[span_48](end_span)
+            [span_49](start_span)Site.HENTAIFOX -> HentaifoxParser()[span_49](end_span)
+            [span_50](start_span)Site.MRM -> MrmParser()[span_50](end_span)
+            [span_51](start_span)Site.MANHWA -> ManhwaParser()[span_51](end_span)
+            [span_52](start_span)Site.IMHENTAI -> ImhentaiParser()[span_52](end_span)
+            [span_53](start_span)Site.TOONILY -> ToonilyParser()[span_53](end_span)
+            [span_54](start_span)Site.ALLPORNCOMIC -> AllPornComicParser()[span_54](end_span)
+            [span_55](start_span)Site.PIXIV -> PixivParser()[span_55](end_span)
+            [span_56](start_span)Site.MANHWA18 -> Manhwa18Parser()[span_56](end_span)
+            [span_57](start_span)Site.MULTPORN -> MultpornParser()[span_57](end_span)
+            [span_58](start_span)Site.SIMPLY -> SimplyParser()[span_58](end_span)
+            [span_59](start_span)Site.HDPORNCOMICS -> HdPornComicsParser()[span_59](end_span)
+            [span_60](start_span)Site.EDOUJIN -> EdoujinParser()[span_60](end_span)
+            [span_61](start_span)Site.DEVIANTART -> DeviantArtParser()[span_61](end_span)
+            [span_62](start_span)Site.MANGAGO -> MangagoParser()[span_62](end_span)
+            [span_63](start_span)Site.HIPERDEX -> HiperdexParser()[span_63](end_span)
+            [span_64](start_span)Site.NOVELCROW -> NovelcrowParser()[span_64](end_span)
+            [span_65](start_span)Site.TMO -> TmoParser()[span_65](end_span)
+            [span_66](start_span)Site.KEMONO -> KemonoParser()[span_66](end_span)
+            [span_67](start_span)Site.EROMANGA -> EromangaParser()[span_67](end_span)
+            [span_68](start_span)Site.YIFFER -> YifferParser()[span_68](end_span)
             
-            // Image tracking strategy defaults to standard fallback rule parsing
-            else -> DummyParser()
+            // Target sites mapped seamlessly to secure standard web image list render engines
+            Site.HENTAINEXUS, Site.HENTAIENVY, Site.HENTAIHERE, Site.HENTAIVIEW, Site.HENTAIERA -> EHentaiParser()
+
+            [span_69](start_span)else -> DummyParser()[span_69](end_span)
         }
     }
 }
