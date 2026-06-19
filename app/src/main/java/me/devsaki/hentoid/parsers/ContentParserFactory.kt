@@ -5,6 +5,7 @@ import me.devsaki.hentoid.enums.Site
 import me.devsaki.hentoid.parsers.content.ASMHentaiContent
 import me.devsaki.hentoid.parsers.content.AllPornComicContent
 import me.devsaki.hentoid.parsers.content.ContentParser
+import me.devsaki.hentoid.parsers.content.CustomSitesContent
 import me.devsaki.hentoid.parsers.content.DeviantArtContent
 import me.devsaki.hentoid.parsers.content.DoujinsContent
 import me.devsaki.hentoid.parsers.content.DummyContent
@@ -107,6 +108,10 @@ object ContentParserFactory {
             Site.KEMONO -> KemonoContent::class.java
             Site.EROMANGA -> EromangaContent::class.java
             Site.YIFFER -> YifferContent::class.java
+            
+            // Route your new sites to the new custom streaming layout
+            Site.HENTAIHERE, Site.HENTAIERA, Site.HENTAIENVY -> CustomSitesContent::class.java
+            
             else -> DummyContent::class.java
         }
     }
@@ -149,6 +154,8 @@ object ContentParserFactory {
             Site.KEMONO -> KemonoParser()
             Site.EROMANGA -> EromangaParser()
             Site.YIFFER -> YifferParser()
+            
+            // Image tracking strategy defaults to standard fallback rule parsing
             else -> DummyParser()
         }
     }
