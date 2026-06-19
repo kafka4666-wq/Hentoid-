@@ -1,4 +1,3 @@
-```yaml
 name: Compile Custom Hentoid APK
 
 on:
@@ -32,3 +31,4 @@ jobs:
       with:
         name: Hentoid-Custom-Build
         path: app/build/outputs/apk/debug/app-debug.apk
+        
