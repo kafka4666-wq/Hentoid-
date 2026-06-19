@@ -12,7 +12,6 @@ import timber.log.Timber
 private val RETIRED_SITES = setOf(
     Site.TMO,  // Dead
     Site.EDOUJIN,  // Dead
-    Site.NEXUS,  // Dead
     Site.HBROWSE,  // Dead
     Site.HENTAICAFE,  // Dead
     Site.KSK,  // Dead
@@ -21,6 +20,7 @@ private val RETIRED_SITES = setOf(
     Site.FAKKU,  // Old Fakku; kept for retrocompatibility
     Site.FAKKU2,  // Dropped after Fakku decided to flag downloading accounts and IPs
     Site.ASMHENTAI_COMICS,  // Does not work directly
+    // Site.NEXUS is commented out here so it becomes active and usable again!
 )
 
 private val INVISIBLE_SITES = setOf(
@@ -88,6 +88,11 @@ enum class Site(val code: Int, val description: String, val url: String, val ico
     KEMONO(37, "Kemono.cr", "https://kemono.cr/", R.drawable.ic_site_kemono),
     EROMANGA(38, "Eromanga-Sora", "https://eromanga-sora.com/", R.drawable.ic_site_sora),
     YIFFER(39, "Yiffer", "https://yiffer.xyz/", R.drawable.ic_site_yiffer),
+
+    // Adding your new personal streaming sites here using available unused item codes!
+    HENTAIHERE(40, "HentaiHere", "https://hentaihere.com", R.drawable.ic_app),
+    HENTAIERA(41, "HentaiEra", "https://hentaiera.com", R.drawable.ic_app),
+    HENTAIENVY(42, "HentaiEnvy", "https://hentaienvy.com", R.drawable.ic_app),
 
     MAL(96, "MyAnimeList", "", R.drawable.ic_app),
 
