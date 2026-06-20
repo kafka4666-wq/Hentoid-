@@ -1126,7 +1126,7 @@
     <string name="web_url">Usa link</string>
     <string name="web_url_clipboard">URL copiato negli appunti</string>
     <string name="white">Bianco</string>
-    <string name="work_artist">Artista: %s</string>
+    <string name="work_artist" formatted="false">Artista: %s</string>
     <string name="work_pages_duplicate_dialog_library">Pagine (in libreria): %d</string>
     <string name="work_pages_duplicate_dialog_queue">Pagine (in coda): %d</string>
     <string name="work_pages_duplicate_dialog_source">Pagine (questa fonte): %d</string>
