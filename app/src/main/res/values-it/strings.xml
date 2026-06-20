@@ -1121,7 +1121,7 @@
     <string name="web_refresh_stop">Aggiorna/ferma</string>
     <string name="web_storage_permission_denied">Autorizzazione di archiviazione negata - impossibile utilizzare il downloader</string>
     <string name="web_target_page_outside_restricted_domains">Il sito %s è fuori dai domini circoscritti</string>
-    <string name="web_target_page_unavailable">Pagina web non disponibile%s; caricamento pagina di benvenuto</string>
+    <string name="web_target_page_unavailable" formatted="false">Pagina web non disponibile%s; caricamento pagina di benvenuto</string>
     <string name="web_unparsable">Questo contenuto non può essere scaricato. Spiacente~</string>
     <string name="web_url">Usa link</string>
     <string name="web_url_clipboard">URL copiato negli appunti</string>
